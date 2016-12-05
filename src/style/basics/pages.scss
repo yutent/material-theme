@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 100%;
+}
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: #FFF;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+::selection {
+  color: #FFF;
+  text-shadow: none;
+  background-color: #000;
+}

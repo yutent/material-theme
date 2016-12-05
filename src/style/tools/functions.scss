@@ -1,0 +1,28 @@
+// ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+// Get breakpoint argument from $breakpoints and return media query with passed argument
+// NOTE This require a $breakpoints map.
+// Ex: @media screen and (break(medium)) {...}
+// Ex: @media screen and (density(2x)) {...}
+// ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+
+@function break($key) {
+  @if map-has-key($breakpoints, $key) {
+    @return 'min-width: #{ map-get( $breakpoints, $key ) }';
+  }
+}
+
+@function density($key) {
+  @if map-has-key($densities, $key) {
+    @return 'min-resolution: #{ map-get( $densities, $key ) }';
+  }
+}
+
+
+// ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
+// Get color value from a map color
+// Last update: 22/07/2016
+// ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+
+@function color($color, $variant) {
+  @return map-get($color, $variant);
+}
