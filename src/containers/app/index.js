@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 import classNames from 'classnames/bind';
-import style from './App.scss';
+import Header from '../../components/header';
+import Preview from '../../components/preview';
 
+import style from './style.scss';
 let cls = classNames.bind(style);
 
 class App extends Component {
   render() {
     return (
       <div className={ cls('App') }>
-        Welcome
+        {/* App preview */}
+        <Preview />
+        {/* Header */}
+        <Header />
       </div>
     );
   }

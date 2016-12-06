@@ -1,0 +1,12 @@
+@import '~help-media-queries/src/helpers.scss';
+
+:global {
+
+  html {
+    background: rgb(76, 83, 106);
+  }
+
+  .App {
+    position: relative;
+  }
+}

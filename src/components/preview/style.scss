@@ -1,0 +1,57 @@
+
+
+.Preview {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.Panel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &:not(:target) {
+    z-index: 10;
+    animation-name: PreviwSlide;
+    animation-duration: 600ms;
+    animation-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
+    animation-direction: alternate;
+    animation-fill-mode: both;
+  }
+
+}
+
+
+.Panel-Default {
+  background-color: #253238;
+}
+
+
+.Panel-Darker {
+  background-color: #212121;
+}
+
+
+.Panel-Palenight {
+  background-color: #292C3F;
+}
+
+
+.Panel-Lighter {
+  background-color: #3F4A4E;
+}
+
+
+
+@keyframes PreviwSlide {
+  to {
+    transform: translateX(100%);
+  }
+}
