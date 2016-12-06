@@ -13,7 +13,7 @@ class App extends Component {
         {/* App preview */}
         <Preview />
         {/* Header */}
-        <Header />
+        <Header title='Material Theme' subtitle='The most epic theme for Sublime Text.' cta='Start here!'/>
       </div>
     );
   }

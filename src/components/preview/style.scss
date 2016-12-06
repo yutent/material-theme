@@ -32,8 +32,7 @@
     animation-name: PreviwSlide;
     animation-duration: 400ms;
     animation-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
-    animation-direction: alternate;
-    animation-fill-mode: both;
+    animation-fill-mode: forwards;
   }
 
 }
