@@ -10,10 +10,10 @@ let Preview = () => {
 
   return (
     <div className={ cx('Preview') } >
-      <div className={ cx('Preview-Panel', 'Panel-Lighter') } id='lighter'></div>
-      <div className={ cx('Preview-Panel', 'Panel-Palenight') } id='palenight'></div>
-      <div className={ cx('Preview-Panel', 'Panel-Darker') } id='darker'></div>
-      <div className={ cx('Preview-Panel', 'Panel-Default') } id='default'></div>
+      <div className={ cx('Preview-Panel', 'Panel-Lighter') } id='/lighter'></div>
+      <div className={ cx('Preview-Panel', 'Panel-Palenight') } id='/palenight'></div>
+      <div className={ cx('Preview-Panel', 'Panel-Darker') } id='/darker'></div>
+      <div className={ cx('Preview-Panel', 'Panel-Default') } id='/default'></div>
     </div>
   );
 };
