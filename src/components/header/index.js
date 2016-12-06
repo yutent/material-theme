@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames/bind';
 import Switcher from '../switcher';
 
-import style from './style.scss';
+import style from './style';
 
 let cx = classNames.bind(style);
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 
-import style from './style.scss';
+import style from './style';
 
 let cx = classNames.bind(style);
 
@@ -10,10 +10,10 @@ let Preview = () => {
 
   return (
     <div className={ cx('Preview') } >
-      <div className={ cx('Panel', 'Panel-Lighter') } id='lighter'></div>
-      <div className={ cx('Panel', 'Panel-Palenight') } id='palenight'></div>
-      <div className={ cx('Panel', 'Panel-Darker') } id='darker'></div>
-      <div className={ cx('Panel', 'Panel-Default') } id='default'></div>
+      <div className={ cx('Preview-Panel', 'Panel-Lighter') } id='lighter'></div>
+      <div className={ cx('Preview-Panel', 'Panel-Palenight') } id='palenight'></div>
+      <div className={ cx('Preview-Panel', 'Panel-Darker') } id='darker'></div>
+      <div className={ cx('Preview-Panel', 'Panel-Default') } id='default'></div>
     </div>
   );
 };

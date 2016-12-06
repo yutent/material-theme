@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import Header from '../../components/header';
 import Preview from '../../components/preview';
 
-import style from './style.scss';
+import style from './style';
 let cls = classNames.bind(style);
 
 class App extends Component {
