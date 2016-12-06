@@ -40,27 +40,25 @@
 
 .Panel-Default {
   background-color: #253238;
-  background-image: url('/themes/material-theme-default@2x.png');
+  background-image: url('#{$baseURL}themes/material-theme-default@2x.png');
 }
 
 
 .Panel-Darker {
   background-color: #212121;
-  background-image: url('/themes/material-theme-darker@2x.png');
+  background-image: url('#{$baseURL}themes/material-theme-darker@2x.png');
 }
 
 
 .Panel-Palenight {
   background-color: #292C3F;
-  background-image: url('/themes/material-theme-palenight@2x.png');
-
+  background-image: url('#{$baseURL}themes/material-theme-palenight@2x.png');
 }
 
 
 .Panel-Lighter {
   background-color: #3F4A4E;
-  background-image: url('/themes/material-theme-lighter@2x.png');
-
+  background-image: url('#{$baseURL}themes/material-theme-lighter@2x.png');
 }
 
 
