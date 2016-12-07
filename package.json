@@ -31,6 +31,7 @@
     "filesize": "3.3.0",
     "find-cache-dir": "0.1.1",
     "fs-extra": "^1.0.0",
+    "gh-pages": "^0.12.0",
     "gzip-size": "3.0.0",
     "help-media-queries": "^2.0.0",
     "html-webpack-plugin": "^2.24.1",
@@ -38,6 +39,7 @@
     "import-glob-loader": "^1.1.0",
     "jest": "^17.0.3",
     "json-loader": "0.5.4",
+    "node-sass": "^3.13.0",
     "object-assign": "4.1.0",
     "path-exists": "^3.0.0",
     "postcss-loader": "^1.2.0",
@@ -46,7 +48,6 @@
     "react-router": "^3.0.0",
     "recursive-readdir": "2.1.0",
     "rimraf": "2.5.4",
-    "node-sass": "^3.13.0",
     "sass-loader": "^4.0.2",
     "strip-ansi": "3.0.1",
     "style-loader": "0.13.1",
@@ -57,17 +58,17 @@
     "whatwg-fetch": "^2.0.1"
   },
   "dependencies": {
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1",
     "help-media-queries": "^2.0.0",
     "node-sass": "^3.13.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
     "sass-loader": "^4.0.2"
   },
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "jest": {
     "moduleFileExtensions": [
