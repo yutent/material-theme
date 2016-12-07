@@ -6,11 +6,15 @@ import style from './PreviewSlide.scss';
 let cx = classNames.bind(style);
 
 // Component
-let PreviewSlide = ({ color, active }) => {
+let PreviewSlide = ({ theme }) => {
   let cssClass = cx(
     'PreviewSlide': true,
-    [`${color}`]: true,
-    { 'isNotActive': !active }
+    {
+      'lighter': theme === 'lighter',
+      'darker': theme === 'darker',
+      'default': theme === 'default',
+      'palenight': theme === 'palenight'
+    }
   );
 
   return (

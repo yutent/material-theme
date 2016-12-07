@@ -9,14 +9,10 @@ let cx = classNames.bind(style);
 // Component
 let Preview = ({theme}) => {
 
-  const themeIs = isEqTo => theme === isEqTo;
 
   return (
     <div className={ cx('Preview') } >
-      <PreviewSlide color="Lighter" active={ themeIs('lighter') } />
-      <PreviewSlide color="Palenight" active={ themeIs('palenight') } />
-      <PreviewSlide color="Darker" active={ themeIs('darker') } />
-      <PreviewSlide color="Default" active={ themeIs('default') } />
+      <PreviewSlide theme={ theme } />
     </div>
   );
 };

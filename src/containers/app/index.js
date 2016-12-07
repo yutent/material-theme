@@ -11,7 +11,7 @@ let App = ({theme}) => {
   return (
     <div className={ cls('App') }>
       {/* App preview */}
-      <Preview theme={theme}/>
+      <Preview theme={theme} />
       {/* Header */}
       <Header title='Material Theme' subtitle='The most epic theme for Sublime Text.' cta='Start here!' theme={theme} />
     </div>
