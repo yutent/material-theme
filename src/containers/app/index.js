@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import classNames from 'classnames/bind';
 import Header from '../../components/header';
 import Preview from '../../components/preview';
@@ -6,17 +6,23 @@ import Preview from '../../components/preview';
 import style from './style';
 let cls = classNames.bind(style);
 
-class App extends Component {
-  render() {
-    return (
-      <div className={ cls('App') }>
-        {/* App preview */}
-        <Preview />
-        {/* Header */}
-        <Header title='Material Theme' subtitle='The most epic theme for Sublime Text.' cta='Start here!'/>
-      </div>
-    );
-  }
-}
+let App = ({theme}) => {
+
+  return (
+    <div className={ cls('App') }>
+      {/* App preview */}
+      <Preview theme={theme}/>
+      {/* Header */}
+      <Header title='Material Theme' subtitle='The most epic theme for Sublime Text.' cta='Start here!'/>
+    </div>
+  );
+};
+
+// Default props
+Preview.defaultProps = {
+  theme: 'default'
+};
+
+
 
 export default App;

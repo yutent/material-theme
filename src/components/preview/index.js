@@ -1,22 +1,35 @@
 import React from 'react';
 import classNames from 'classnames/bind';
+import PreviewSlide from './PreviewSlide';
 
-import style from './style';
+import style from './Preview';
 
 let cx = classNames.bind(style);
 
 // Component
-let Preview = () => {
+let Preview = ({theme}) => {
+
+  const themeIs = isEqTo => theme === isEqTo;
 
   return (
     <div className={ cx('Preview') } >
-      <div className={ cx('Preview-Panel', 'Panel-Lighter') } id='/lighter'></div>
-      <div className={ cx('Preview-Panel', 'Panel-Palenight') } id='/palenight'></div>
-      <div className={ cx('Preview-Panel', 'Panel-Darker') } id='/darker'></div>
-      <div className={ cx('Preview-Panel', 'Panel-Default') } id='/default'></div>
+      <PreviewSlide color="Lighter" active={ themeIs('lighter') } />
+      <PreviewSlide color="Palenight" active={ themeIs('palenight') } />
+      <PreviewSlide color="Darker" active={ themeIs('darker') } />
+      <PreviewSlide color="Default" active={ themeIs('default') } />
     </div>
   );
 };
 
+// Props validation
+Preview.propTypes = {
+  theme: React.PropTypes.string
+};
+
+
+// Default props
+Preview.defaultProps = {
+  theme: 'default'
+};
 
 export default Preview;
