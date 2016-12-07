@@ -7,9 +7,14 @@ let cx = classNames.bind(style);
 
 // Component
 let PreviewSlide = ({ color, active }) => {
+  let cssClass = cx(
+    'PreviewSlide': true,
+    [`${color}`]: true,
+    { 'isNotActive': !active }
+  );
 
   return (
-    <div className={ cx('Preview-Slide', `${color}`, { 'isNotActive': !active }) } />
+    <div className={ cssClass } />
   );
 };
 

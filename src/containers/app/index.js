@@ -13,7 +13,7 @@ let App = ({theme}) => {
       {/* App preview */}
       <Preview theme={theme}/>
       {/* Header */}
-      <Header title='Material Theme' subtitle='The most epic theme for Sublime Text.' cta='Start here!'/>
+      <Header title='Material Theme' subtitle='The most epic theme for Sublime Text.' cta='Start here!' theme={theme} />
     </div>
   );
 };

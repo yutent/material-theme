@@ -7,17 +7,17 @@ import style from './style';
 let cx = classNames.bind(style);
 
 // Component
-let Header = ({title, subtitle, cta}) => {
+let Header = ({title, subtitle, cta, theme}) => {
 
   return (
     <div className={ cx('Header') } >
-      <h1 className={ cx('Header-Title') } >{title}</h1>
+      <h1 className={ cx('Header-Title') } >{ title }</h1>
       <h3 className={ cx('Header-Subtitle') } >
         {subtitle}
-        <a href="https://github.com/equinusocio/material-theme" title="Open GitHub" className={ cx('Header-cta') } >{cta}</a>
+        <a href="https://github.com/equinusocio/material-theme" title="Open GitHub" className={ cx('Header-cta') } >{ cta }</a>
       </h3>
 
-      <Switcher />
+      <Switcher theme={ theme } />
     </div>
   );
 };
