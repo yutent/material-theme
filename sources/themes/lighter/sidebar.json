@@ -5,7 +5,7 @@
 
   {
     "class": "sidebar_container",
-    "layer0.tint": [250, 250, 250],
+    "layer0.tint": [<%= ui.background.primary.rgb %>],
     "layer0.opacity": 1.0,
     "layer0.draw_center": false,
     "layer0.inner_margin": [0, 24, 12, 24],
@@ -19,7 +19,7 @@
     "indent": 16,
     "indent_offset": 0,
     "indent_top_level": false,
-    "layer0.tint": [250, 250, 250],
+    "layer0.tint": [<%= ui.background.primary.rgb %>],
     "layer0.opacity": 1.0,
     "layer1.tint": [225,225,225],
     "layer1.opacity": 0.0
@@ -68,7 +68,7 @@
 
   {
     "class": "sidebar_label",
-    "color": [176, 190, 197],
+    "color": [<%= ui.foreground.normal.rgb %>],
     "font.bold": false,
     "font.italic": false,
     "shadow_color": [255, 255, 255, 0],
@@ -78,7 +78,7 @@
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-    "color": [144, 164, 174],
+    "color": [<%= ui.foreground.primary.rgb %>],
     "shadow_color": [255, 255, 255, 0],
     "shadow_offset": [0, 0]
   },
@@ -86,14 +86,14 @@
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-    "font.bold": false,
-    "color": [69, 90, 100]
+    "font.bold": true,
+    "color": [<%= ui.foreground.primary.rgb %>]
   },
 
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-    "color": [144, 164, 174]
+    "color": [<%= ui.foreground.normal.rgb %>]
   },
 
   {

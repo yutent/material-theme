@@ -7,7 +7,7 @@
 
   {
     "class": "label_control",
-    "color": [176, 190, 197, 255],
+    "color": [<%= ui.foreground.selected.rgb %>],
     "shadow_color": [24, 24, 24, 0],
     "shadow_offset": [0, 0],
     "font.bold": true
@@ -18,7 +18,7 @@
    {
       "class": "label_control",
       "parents": [{"class": "status_bar"}],
-      "color": [144, 164, 174],
+      "color": [<%= ui.foreground.selected.rgb %>], //状态栏文字颜色
       "font.bold": false
   },
 
@@ -29,7 +29,7 @@
     "content_margin": [8, 0, 0, 0],
 
     // Layer 0 base
-    "layer0.tint": [<%= ui.background.primary.rgb %>],
+    "layer0.tint": [<%= ui.background.panel.rgb %>], //状态栏背景色
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [2, 2],
 
@@ -54,17 +54,7 @@
     "min_size": [75, 0]
   },
 
-  {
-    "class": "status_button",
-    "layer0.tint": [<%= ui.background.primary.rgb %>],
-    "layer0.opacity": 1.0,
-    "layer0.draw_center": false,
-    "layer0.inner_margin": [1, 0, 0, 0],
-    "content_margin": [10, 2, 10, 3],
-    "min_size": [75, 0],
-  },
-
-    // panel switcher
+    // panel switcher右上角的文件切换按钮
   {
     "class": "panel_button_control",
     "layer0.texture": "Material Theme/assets/lighter/overflow_menu.png",

@@ -16,11 +16,11 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string><%= ui.background.primary.hex %></string>
+				<string><%= scheme.background %></string>
 				<key>caret</key>
 				<string><%= scheme.caret %></string>
 				<key>foreground</key>
-				<string><%= scheme.foreground %></string>
+				<string><%= ui.foreground.primary.hex %></string>
 				<key>invisibles</key>
 				<string><%= scheme.invisibles %></string>
 				<key>lineHighlight</key>

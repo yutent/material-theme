@@ -1,11 +1,12 @@
 {
   "name": "material-theme",
-  "version": "4.1.5",
+  "version": "4.1.7",
   "description": "Material Theme for Sublime Text 3",
   "main": "gulpfile.babel.js",
   "scripts": {
     "build": "gulp",
     "bt": "gulp build:themes",
+    "bw": "gulp build:widgets",
     "bs": "gulp build:schemes",
     "bump": "gulp bump",
     "changelog": "gulp changelog"
@@ -43,13 +44,7 @@
     "type": "git",
     "url": "https://equinusocio@github.com/equinusocio/material-theme.git"
   },
-  "keywords": [
-    "material",
-    "theme",
-    "sublime",
-    "text",
-    "design"
-  ],
+  "keywords": ["material", "theme", "sublime", "text", "design"],
   "author": "Mattia Astorino",
   "license": "MIT",
   "bugs": {

@@ -6,12 +6,12 @@
   // Status bar panel
   {
     "class": "panel_control",
-    "layer0.tint": [250, 250, 250],
+    "layer0.tint": [<%= ui.background.panel.rgb %>],
     "layer0.inner_margin": [2, 2, 2, 2],
     "layer0.opacity": 1.0,
-    "layer1.tint": [250, 250, 250],
+    "layer1.tint": [<%= ui.background.primary.rgb %>],
     "layer1.inner_margin": [2, 2, 2, 2],
-    "layer1.opacity": 1.0,
+    "layer1.opacity": 0.0,
     "content_margin": [6, 14, 6, 8],
   },
 
@@ -39,24 +39,37 @@
     "class": "text_line_control",
     "layer0.texture": "Material Theme/assets/lighter/input_field_border.png",
     "layer0.opacity": 1.0,
-    "layer0.inner_margin": [20, 5, 20, 5],
+    "layer0.inner_margin": [32, 0, 32, 2],
+    "color_scheme_tint": [<%= ui.background.panel.rgb %>],
     "tint_index": 1,
-    "content_margin": [10, 8, 16, 8]
+    "content_margin": [24, 8, 24, 8]
   },
 
 
-    // Textline input inside overlay panels
+    // Textline input inside overlay panels 命令面板的输入框
 
   {
     "class": "text_line_control",
     "parents": [{"class": "overlay_control"}],
-    "layer0.texture": "Material Theme/assets/lighter/input_field_border--short.png",
-    "layer0.opacity": 1.0,
-    "layer0.inner_margin": [32, 0, 32, 2],
-    "layer0.draw_center": true,
-
-    "content_margin": [32, 8, 32, 8]
+    "color_scheme_tint": [255,255,255, 0],
   },
+
+
+  // 项目窗口
+  // =======================
+  {
+    "class": "panel_control",
+    "parents": [{"class": "switch_project_window"}],
+    "layer0.tint": [<%= ui.background.primary.rgb %>],
+  },
+
+  {
+    "class": "text_line_control",
+    "parents": [{"class": "switch_project_window"}],
+    "color_scheme_tint": [<%= ui.background.primary.rgb %>],
+  },
+
+
 
     // Textline input oveflow menu
 
